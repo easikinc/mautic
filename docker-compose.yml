@@ -1,0 +1,16 @@
+# docker-compose.yml
+services:
+  mautic:
+    image: mautic/mautic:v7
+    ports: ["80:80"]
+    environment:
+      - DATABASE_URL=mysql://user:pass@db:3306/mautic
+    volumes:
+      - mautic_data:/var/www/html
+  db:
+    image: mariadb:10.11
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_DATABASE: mautic
+volumes:
+  mautic_data:
