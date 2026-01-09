@@ -1,2 +1,2 @@
-<h1> Wlcome To Easik </h1>h1>
+<h1> Wlcome To Easik </h1>
   <p1>Hello! Welcome Mautic provides free and open source marketing automation software available to everyone. Free email marketing and lead management software.</p1>
